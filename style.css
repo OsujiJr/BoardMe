@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --BLUE: hsl(228, 71%, 53%);
+    --WHITE: hsl(0, 0%, 100%);
+    --GREY: hsl(0, 0%, 53%);
+}
+/* UTILITY CLASSES */
+.flex{
+    display: flex;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.font-xl{
+    font-size: 27px;
+}
+.font-l{
+    font-size: 21px;
+}
+.font-m{
+    font-size: 17px;
+}
+.font-s{
+    font-size: 15px;
+}
+.font-b{
+    font-weight: bold;
+}
+.position-rel{
+    position: relative;
+}
+.col-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-1-5{
+    gap: 1.5rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.border{
+    border: 2px solid firebrick;
+}
+.bg-blue{
+    background-color: var(--BLUE);
+}
+.white{
+    color: var(--WHITE);
+}
+.blue{
+    color: var(--BLUE);
+}
+.box{
+    width: 5.7rem;
+    height: 3rem;
+    box-shadow: 0 0 0 1px var(--GREY);
+}
+.box:hover{
+    cursor: pointer;
+}
+body{
+    min-height: 100vh;
+    font-family: "open sans";
+}
+.centered-text{
+    text-align: center;
+}
+.centered{
+    justify-content: center;
+    align-items: center;
+}
+.txt-dec{
+    text-decoration: none;
+}
+.pad-1{
+    padding: 1rem;
+}
+.mwidth{
+    max-width: 600px;
+}
+.login-btn{
+    height: 3rem;
+    border: 1px solid var(--WHITE);
+    width: 11rem;
+    align-self: center;
+}
+.grey{
+    color: var(--GREY);
+}
+.signup-btn{
+    height: 3rem;
+    background-color: var(--BLUE);
+}
+.signup-btn:hover, .log:hover {
+    cursor: pointer;
+    transform: translateY(-2.5px);
+}
+.spacebtwn{
+    justify-content: space-between;
+}
+.spacearound{
+    justify-content: space-around;
+}
+.input-border{
+    padding-left: 0.9rem;
+    border: none;
+    height: 2rem;
+    box-shadow: 0 0 1.4px rgba(0, 0, 0, 0.3); 
+}
+main{
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: auto;
+    background-image: linear-gradient(100deg, var(--BLUE) 0%, var(--BLUE) 43%, var(--WHITE) 43%, var(--WHITE) 100%);
+    border: 10px solid black;
+    border-radius: 6px;
+} 
+.title{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+.signup{
+    margin-left: -9rem;
+}
+label{
+    font-size: 16px;
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--BLUE);
+}
+input[type="checkbox"]{
+    width: 20px;
+}
+.pass img{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
